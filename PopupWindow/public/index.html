@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popup Window Example</title>
+  <style>
+    /* CSS for the popup window */
+    .popup {
+      width: 300px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      display: none; /* Initially hide the popup */
+    }
+
+    /* CSS for the links */
+    .popup a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="openPopup">Open Popup</button>
+
+  <div class="popup" id="popupWindow">
+    <a href="https://example.com">Link 1</a>
+    <a href="https://example.com">Link 2</a>
+    <a href="https://example.com">Link 3</a>
+  </div>
+
+  <script>
+    const openPopupButton = document.getElementById('openPopup');
+    const popupWindow = document.getElementById('popupWindow');
+
+    openPopupButton.addEventListener('click', function() {
+      popupWindow.style.display = 'block'; // Show the popup window
+    });
+  </script>
+</body>
+</html>
