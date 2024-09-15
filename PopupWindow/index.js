@@ -13,6 +13,10 @@ app.get('/about', (req, res) => {
   res.sendFile('Test');
 });
 
+app.get('/myTest', (req, res) => {
+  res.sendFile('myTest');
+});
+
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
