@@ -14,7 +14,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/myTest', (req, res) => {
-  res.sendFile('myTest');
+  res.sendFile('myTest123');
 });
 
 app.listen(3000, () => {
